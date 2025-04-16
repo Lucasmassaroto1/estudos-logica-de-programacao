@@ -103,3 +103,10 @@
  *   - Algoritmos de ordenação
  *   - Algoritmos de busca
  */
+
+algoritimo "primeiro"
+variavel
+
+inicio
+    Escreva("Olá, Mundo!")
+finalgoritimo

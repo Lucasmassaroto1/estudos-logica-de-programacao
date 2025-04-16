@@ -104,9 +104,19 @@
  *   - Algoritmos de busca
  */
 
-algoritimo "primeiro"
+// ========= LOGICA DE PROGRAMAÇÃO PORTUGOL =========
+algoritmo "primeiro"
 variavel
-
+    /* n1, n2: Inteiro
+    M: Real */
+    A: Real
 inicio
-    Escreva("Olá, Mundo!")
-finalgoritimo
+    A <- Sen(GraupRad(90))
+    Escreva(A)
+    /* Escreva("Digite um numero: ")
+    Leia(n1)
+    Escreva("Digite outro numero: ")
+    Leia(n2)
+    M <- (n1 + n2) / 2
+    Escreva("A media entre ", n1, "e ", n2, "e igual a ", M) */
+fimalgoritmo

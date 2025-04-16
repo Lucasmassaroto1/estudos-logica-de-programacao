@@ -52,3 +52,54 @@
  *       console.log("Olá, " + nome + "!");
  *     }
  */
+
+/**
+ * ========= ALGORITMOS COMPUTACIONAIS =========
+ * 
+ * ▸ Introdução à Lógica de Programação
+ *   - O que é um algoritmo
+ *   - Instruções e sequências
+ *   - Entrada, processamento e saída
+ * 
+ * ▸ Tipos de Dados e Variáveis
+ *   - Números (inteiros e decimais)
+ *   - Textos (strings)
+ *   - Booleanos (true/false)
+ *   - Variáveis e constantes
+ *   - Conversão de tipos
+ *   - Operadores aritméticos e lógicos
+ * 
+ * ▸ Estruturas de Controle
+ *   - Condicionais (if, else)
+ *   - Operadores de comparação
+ *   - Condições aninhadas
+ *   - Operador ternário
+ *   - Switch/case
+ *   - Escopo de variáveis
+ * 
+ * ▸ Estruturas de Repetição
+ *   - Laço while
+ *   - Laço do...while
+ *   - Laço for
+ *   - Break e continue
+ *   - Laços aninhados
+ *   - Diferença entre os laços
+ * 
+ * ▸ Vetores (Arrays)
+ *   - Declaração e inicialização
+ *   - Percorrendo arrays
+ * 
+ * ▸ Funções
+ *   - Criando funções
+ *   - Parâmetros e retorno
+ *   - Funções anônimas
+ * 
+ * ▸ Algoritmos Clássicos
+ *   - Soma de números
+ *   - Média de valores
+ *   - Maior/menor número
+ * 
+ * ▸ Extras
+ *   - Algoritmos de ordenação
+ *   - Algoritmos de busca
+ */

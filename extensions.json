@@ -1,0 +1,23 @@
+{
+  "recommendations":[
+    "MS-CEINTL.vscode-language-pack-pt-BR", // Linguage Pack PT-BR
+    "carlos18mz.cyberpunk-2077-rebuild", // Theme Cyberpunk
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "formulahendry.auto-close-tag", // Auto Close Tag
+    "vscode-icons-team.vscode-icons", // Vscode Icons
+    "rangav.vscode-thunder-client", // Thunder Client
+    "naumovs.color-highlight", // Color Highlight
+    "oderwat.indent-rainbow", // Indent Rainbow
+    "ms-vscode.live-server", // Live Preview
+    "ritwickdey.LiveServer", // Live Server
+    "usernamehw.errorlens", // Error Leans
+    "esbenp.prettier-vscode", // Prettier
+    "dsznajder.es7-react-js-snippets", // ES React/React Native Snippets
+    "bmewburn.vscode-intelephense-client", // Php Intelephense
+    "hakcorp.php-awesome-snippets", // Php Awesome Snippets
+    "miramac.vscode-exec-node", // Node.js Exec
+    "ms-python.vscode-pylance", // Pylance
+    "ms-python.debugpy", // Python Debug
+    "ms-python.python" // Python
+  ]
+}

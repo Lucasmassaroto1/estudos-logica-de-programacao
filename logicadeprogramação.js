@@ -90,8 +90,19 @@
  * ▸ Ordem de Precedência
  *   - () → Parênteses Primeiro
  *   - ^ → Exponenciação
- *   - * / % → Multiplicação, Divisão e Resto
+ *   - * / → Multiplicação, Divisão
  *   - + - → Adição e Subtração
+ *   ▸ Relacionais
+ *   - > → Maior que
+ *   - < → Menor que
+ *   - >= → Maior ou igual a
+ *   - <= → Menor ou igual a
+ *   - == → Igual a(comparação)
+ *   - != → Diferente De
+ *   ▸ Lógicos
+ *   - && → E(and)
+ *   - || → OU(or)
+ *   - ! → NÃO(not)
  * 
  * ▸ Operadores Lógicos
  *   - && → E(and)
@@ -103,12 +114,21 @@
  */
 
 // ========= LOGICA DE PROGRAMAÇÃO PORTUGOL =========
-algoritmo "primeiro"
+algoritmo "triangulos"
 variavel
-    A, B, C; Interiro
+    L1, L2, L3: Real
+    EQ, ES, TRI: Logicos
 inicio
-    A <- 2
-    B <- 3
-    C <- 5
-    Escreva(1=C%2)
+    Escreva("Digite o primeiro lado: ")
+    Leia(L1)
+    Escreva("Digite o segundo lado: ")
+    Leia(L2)
+    Escreva("Digite o terceiro lado: ")
+    Leia(L3)
+    TRI <- (L1 < L2 + L3) e (L2 < L1 + L3) e (L3 < L1 + L2)
+    EQ <- (L1 = L2) e (L2 = L3)
+    ES <- (L1 <> L2) e (L2 <> L3) e (L1 <> L3)
+    Escreval("Pode formar um TRIAGULO? ", TRI)
+    Escreval("O triangulo é EQUILATERO? ", EQ)
+    Escreva("O triangulo é ESCALENO? ", ES)
 fimalgoritmo

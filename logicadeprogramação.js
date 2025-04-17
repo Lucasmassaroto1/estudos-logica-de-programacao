@@ -1,76 +1,20 @@
 /**
- * ========= Tipos de dados e Conceitos Básicos =========
- * 
- * ▸ Variáveis
- *   - let → escopo de bloco, pode ser alterada
- *   - const → escopo de bloco, valor constante (não pode ser reatribuído)
- *   - var → escopo de função (evite usar, é mais antigo e pode causar confusão)
- * 
- * ▸ Tipos de Dados
- *   - String → texto (ex: "Olá", 'Mundo')
- *   - Number → número (ex: 42, 3.14)
- *     - Conversão: Number(), parseInt(), parseFloat()
- *   - Boolean → verdadeiro (true) ou falso (false)
- *   - Null → intencionalmente vazio
- *   - Undefined → não definido (valor ainda não atribuído)
- * 
- * ▸ Operadores Aritméticos
- *   - Adição: +
- *   - Subtração: -
- *   - Multiplicação: *
- *   - Divisão: /
- *   - Resto da divisão: %
- *   - Exponenciação: **
- * 
- * ▸ Operadores de Atribuição
- *   - =  → atribuição
- *   - += → soma e atribui
- *   - -= → subtrai e atribui
- *   - *= → multiplica e atribui
- *   - /= → divide e atribui
- *   - %= → resto e atribui
- *   - **= → exponencia e atribui
- * 
- * ▸ Incremento e Decremento
- *   - ++ → incrementa +1
- *   - -- → decrementa -1
- * 
- * ▸ Condições
- *   - if → se
- *   - else if → senão se
- *   - else → senão
- * 
- * ▸ Laços de Repetição (Loops)
- *   - for
- *   - while
- *   - do while
- * 
- * ▸ Funções
- *   - Blocos reutilizáveis de código
- *   - Exemplo:
- *     function saudacao(nome){
- *       console.log("Olá, " + nome + "!");
- *     }
- */
-
-/**
  * ========= ALGORITMOS COMPUTACIONAIS =========
- * 
  * ▸ Introdução à Lógica de Programação
  *   - O que é um algoritmo
  *   - Instruções e sequências
  *   - Entrada, processamento e saída
  * 
  * ▸ Tipos de Dados e Variáveis
- *   - Números (inteiros e decimais)
- *   - Textos (strings)
- *   - Booleanos (true/false)
- *   - Variáveis e constantes
+ *   - Números → (inteiros e decimais)
+ *   - Textos → (strings)
+ *   - Booleanos → (true/false)
+ *   - Variáveis e constantes → (let, const, var)
  *   - Conversão de tipos
  *   - Operadores aritméticos e lógicos
  * 
  * ▸ Estruturas de Controle
- *   - Condicionais (if, else)
+ *   - Condicionais → (if, else)
  *   - Operadores de comparação
  *   - Condições aninhadas
  *   - Operador ternário
@@ -83,7 +27,6 @@
  *   - Laço for
  *   - Break e continue
  *   - Laços aninhados
- *   - Diferença entre os laços
  * 
  * ▸ Vetores (Arrays)
  *   - Declaração e inicialização
@@ -99,24 +42,73 @@
  *   - Média de valores
  *   - Maior/menor número
  * 
- * ▸ Extras
- *   - Algoritmos de ordenação
- *   - Algoritmos de busca
+ */
+
+/**
+ * ========= OPERADORES =========
+ * ▸ Operadores Aritméticos
+ *   - + → Adição
+ *   - - → Subtração
+ *   - * → Multiplicação
+ *   - / → Divisão
+ *   - \ → Divisão Inteira
+ *   - % → Resto da divisão
+ *   - ** ou ^ → Exponenciação
+ * 
+ * ▸ Funções Aritméticos
+ *   - Abs → Valor Absoluto
+ *   - Exp → Exponenciação
+ *   - Int → Valor Inteiro
+ *   - Raizq → Raiz Quadrada
+ *   - Pi → Retorna PI
+ *   - Sen → Seno(rad)
+ *   - Cos → Cosseno(rad)
+ *   - Tan → Tangente(rad)
+ *   - GraupRad → Graus Para Rad
+ * 
+ * ▸ Operadores de Atribuição
+ *   - =  → atribuição
+ *   - += → soma e atribui
+ *   - -= → subtrai e atribui
+ *   - *= → multiplica e atribui
+ *   - /= → divide e atribui
+ *   - %= → resto e atribui
+ *   - **= → exponencia e atribui
+ * 
+ *   ▸ Incremento e Decremento
+ *   - ++ → incrementa +1
+ *   - -- → decrementa -1
+ * 
+ * ▸ Operadores Relacionais
+ *   - > → Maior que
+ *   - < → Menor que
+ *   - >= → Maior ou igual a
+ *   - <= → Menor ou igual a
+ *   - == → Igual a(comparação)
+ *   - <> ou != → Diferente De
+ * 
+ * ▸ Ordem de Precedência
+ *   - () → Parênteses Primeiro
+ *   - ^ → Exponenciação
+ *   - * / % → Multiplicação, Divisão e Resto
+ *   - + - → Adição e Subtração
+ * 
+ * ▸ Operadores Lógicos
+ *   - && → E(and)
+ *   - || → OU(or)
+ *   - ! → NÃO(not)
+ *   -  → 
+ *   -  → 
+ *   -  → 
  */
 
 // ========= LOGICA DE PROGRAMAÇÃO PORTUGOL =========
 algoritmo "primeiro"
 variavel
-    /* n1, n2: Inteiro
-    M: Real */
-    A: Real
+    A, B, C; Interiro
 inicio
-    A <- Sen(GraupRad(90))
-    Escreva(A)
-    /* Escreva("Digite um numero: ")
-    Leia(n1)
-    Escreva("Digite outro numero: ")
-    Leia(n2)
-    M <- (n1 + n2) / 2
-    Escreva("A media entre ", n1, "e ", n2, "e igual a ", M) */
+    A <- 2
+    B <- 3
+    C <- 5
+    Escreva(1=C%2)
 fimalgoritmo

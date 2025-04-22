@@ -112,14 +112,15 @@
  *   -  → 
  *   -  → 
  */
-
-// ========= LOGICA DE PROGRAMAÇÃO PORTUGOL =========
-algoritmo "temperatura"
-variavel
-    F, C: Real
-inicio
-    Escreva("Quantos graus esta aqui? ")
-    Leia(F)
-    C <- (F - 32)/1.8
-    Escreva("A temperatura no Brasil estaria °C", C)
-fimalgoritmo
+/**
+ * ========= ESTRUTURA CONDICIONAIS =========
+ * ▸ Condicionais
+ *   - if → Se
+ *   - else → senao
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ * 
+ */

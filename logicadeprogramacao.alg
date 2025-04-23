@@ -174,3 +174,108 @@ inicio
         fimenquanto
     fimse
 fimalgoritmo
+
+algoritmo "somador"
+var
+    N, S: inteiro
+    resp: caractere
+inicio
+    S <- 0
+    resp <- "s"
+    repita
+        escreva("o. valor ==> ")
+        leia(N)
+        S <- S + N
+        escreva("Voce quer continuar? [S/N] ")
+        leia(resp)
+    ate (resp = "n")
+    escreval("A soma de todos os valores digitados e ", S)
+fimalgoritmo
+
+algoritmo "somador"
+var
+    cont, n, r: inteiro
+inicio
+    cont <- 1
+    escreva("Quer ver a tabuada de qual numero? ")
+    leia(n)
+    repita
+        r <- N * cont
+        escreval(n, " X ", cont, " = ", r)
+        cont <- cont + 1
+    ate ( cont > 10)
+fimalgoritmo
+
+algoritmo "Contanegativos"
+var
+    n, c , totn: inteiro
+inicio
+    c <- 1
+    totn <- 0
+    repita
+        escreva("Digite um numero: ")
+        leia(n)
+        se (n<0) entao
+            totn <- totn + 1
+        fimse
+        c <- c + 1
+    ate (c > 5)
+    escreva("Foram digitados ", totn, " valores negativos.")
+fimalgoritmo
+
+algoritmo "fatorial"
+var
+    c, n, f: inteiro
+inicio
+    escreva("Digite um numero: ")
+    leia(n)
+    c <- n
+    f <- 1
+    repita
+        f <- f * c
+        c <- c - 1
+    ate (c < 1)
+    escreva("O valor de fatorial de ", n, " e igual a ", f)
+fimalgoritmo
+
+algoritmo "fatorial"
+var
+    c, n, f: inteiro
+    r: caractere
+inicio
+repita
+    escreva("Digite um numero: ")
+    leia(n)
+    c <- n
+    f <- 1
+    repita
+        f <- f * c
+        c <- c - 1
+    ate (c < 1)
+    escreval("O valor de fatorial de ", n, " e igual a ", f)
+    escreva("Quer continuar? [S/N]")
+    leia(r)
+    limpatela
+ate (r = "n")
+fimalgoritmo
+
+algoritmo "numeroprimo"
+var
+    c, n, contdiv: inteiro
+inicio
+    c <- 1
+    contdiv <- 0
+    escreva("Digite um numero: ")
+    leia(n)
+    repita
+        se (n % c = 0) entao
+            contdiv <- contdiv + 1
+        fimse
+        c <- c + 1
+    ate (c > n)
+    se (contdiv > 2) entao
+        escreval("O valor ", n, " nao e primo")
+    senao
+        escreval("O valor de ", n, " e primo")
+    fimse
+fimalgoritmo

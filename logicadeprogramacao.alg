@@ -279,3 +279,82 @@ inicio
         escreval("O valor de ", n, " e primo")
     fimse
 fimalgoritmo
+
+algoritmo "repeticao3"
+var
+    c: inteiro
+inicio
+    para c <- 1 ate 10 passo 1 faca
+        escreva(c)
+    fimpara
+fimalgoritmo
+
+algoritmo "repeticao3invertida"
+var
+    c: inteiro
+inicio
+    para c <- 10 ate 1 passo -1 faca
+        escreva(c)
+    fimpara
+fimalgoritmo
+
+algoritmo "repeticao3para"
+var
+    n: inteiro
+    c: inteiro
+    s: inteiro
+inicio
+    s <- 0
+    para c <- 1 ate 5 faca
+        escreval("Digite um valor: ")
+        leia(n)
+        s <- s + n
+    fimpara
+    escreval("A soma dos valores e ", s)
+fimalgoritmo
+
+algoritmo "paradenumerospares"
+var
+    cont, v: inteiro
+inicio
+    escreva("Digite um valor: ")
+    leia(v)
+    se (v%2=1) entao
+    v <- v -1
+    fimse
+    para cont <- v ate 0 passo -2 faca
+        escreva(cont)
+    fimpara
+fimalgoritmo
+
+algoritmo "quantosentre0e10"
+var
+    c, v, tot010, simp: inteiro
+inicio
+    tot010 <- 0
+    simp <- 0
+    para c <- 1 ate 6 faca
+        escreva("Digite um valor")
+        leia(v)
+        se (v >= 0) e (v <= 10) entao
+            tot010 <- tot010 + 1
+            se (v%2=1) entao
+                simp <- simp + v
+            fimse
+        fimse
+    fimpara
+    escreval("Ao todo foram ", tot010, " valores entre 0 e 10")
+    escreval("neste intervalo, a soma de impares foi ", simp)
+fimalgoritmo
+
+algoritmo "combinacoes"
+var
+    c1, c2: inteiro
+inicio
+    para c1 := 1 ate 3 faca
+        para c2 := 1 ate 3 faca
+            escreval(c1, c2)
+        fimpara
+    fimpara
+fimalgoritmo
+

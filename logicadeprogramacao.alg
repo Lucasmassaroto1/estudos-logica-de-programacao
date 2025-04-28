@@ -358,3 +358,81 @@ inicio
     fimpara
 fimalgoritmo
 
+algoritmo "detectordepesadoformaerrada"
+var
+    i: inteiro
+    n, pesado: caractere
+    p, mai: real
+inicio
+    limpatela
+    escreval("-------------------------------------")
+    escreval(" D E T E C T O E   D E   P E S A D O ")
+    escreval(" Maior Peso ate agora: ", mai, "Kg")
+    escreval("-------------------------------------")
+    para i <- 1 ate 5 faca
+        escreva("Digite o nome: ")
+        leia(n)
+        escreva("Digite o peso de ", n, ": ")
+        leia(p)
+        se (p>mai) entao
+            mai <- p
+            pesado <- n
+        fimse
+        limpatela
+        escreval("-------------------------------------")
+        escreval(" D E T E C T O E   D E   P E S A D O ")
+        escreval(" Maior Peso ate agora: ", mai, "Kg")
+        escreval("-------------------------------------")
+    fimpara
+    escreval("-------------------------------------")
+    escreval(" D E T E C T O E   D E   P E S A D O ")
+    escreval(" Maior Peso ate agora: ", mai, "Kg")
+    escreval("-------------------------------------")
+    escreval("A pessoa mais pesada foi ", pesado, ", com ", mai, "quilos.")
+fimalgoritmo
+
+algoritmo "detectordepesado"
+var
+    i: inteiro
+    n, pesado: caractere
+    p, mai: real
+procedimento topo()
+inicio
+    limpatela
+    escreval("-------------------------------------")
+    escreval(" D E T E C T O E   D E   P E S A D O ")
+    escreval(" Maior Peso ate agora: ", mai, "Kg")
+    escreval("-------------------------------------")
+fimprocedimento
+inicio
+    topo()
+    para i <- 1 ate 5 faca
+        escreva("Digite o nome: ")
+        leia(n)
+        escreva("Digite o peso de ", n, ": ")
+        leia(p)
+        se (p>mai) entao
+            mai <- p
+            pesado <- n
+        fimse
+        topo()
+    fimpara
+    topo()
+    escreval("A pessoa mais pesada foi ", pesado, ", com ", mai, " quilos.")
+fimalgoritmo
+
+algoritmo "fazsomaprocidimento"               
+var                                           
+    x, y: inteiro                              
+procedimento soma(a, b: inteiro)              
+inicio                                        
+    escreval("Recebi o valor ", a)             
+    escreval("Recebi o valor ", b)             
+    escreval("a soma entre os dois e ", a + b) 
+fimprocedimento                               
+inicio                                        
+    x <- 5                                    
+    y <- 3                                    
+    soma(x ,y)                                
+fimalgoritmo
+

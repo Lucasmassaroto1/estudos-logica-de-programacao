@@ -1,4 +1,17 @@
 /**
+ * ========= TITULO =========
+ * ▸ Exemplo
+ *   - "coisa" → Descrição da quela "Coisa"
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ * 
+ */
+
+/**
  * ========= ALGORITMOS COMPUTACIONAIS =========
  * ▸ Introdução à Lógica de Programação
  *   - O que é um algoritmo
@@ -93,16 +106,16 @@
  *   - * / → Multiplicação, Divisão
  *   - + - → Adição e Subtração
  *   ▸ Relacionais
- *   - > → Maior que
- *   - < → Menor que
- *   - >= → Maior ou igual a
- *   - <= → Menor ou igual a
- *   - == → Igual a(comparação)
- *   - != → Diferente De
+ *      - > → Maior que
+ *      - < → Menor que
+ *      - >= → Maior ou igual a
+ *      - <= → Menor ou igual a
+ *      - == → Igual a(comparação)
+ *      - != → Diferente De
  *   ▸ Lógicos
- *   - && → E(and)
- *   - || → OU(or)
- *   - ! → NÃO(not)
+ *      - && → E(and)
+ *      - || → OU(or)
+ *      - ! → NÃO(not)
  * 
  * ▸ Operadores Lógicos
  *   - && → E(and)
@@ -112,11 +125,72 @@
  *   -  → 
  *   -  → 
  */
+
 /**
  * ========= ESTRUTURA CONDICIONAIS =========
  * ▸ Condicionais
  *   - if → Se
- *   - else → senao
+ *   - else → Senao
+ *   - else if → Mais Se
+ * 
+ */
+
+/**
+ * ========= ESTRUTURA DE REPETIÇÃO=========
+ * ▸ Repetição
+ *   - while → Executa enquanto a condição for verdadeira
+ *   - do...while → Executa pelo menos uma vez antes de verificar a condição
+ *   - for → Usado quando se sabe o numero de interações
+ *   - break → Interrompe o laço imediatamente
+ *   - continue → Pula para a próxima iteração do laço
+ *   - laço aninhado → Laço dentro de outro laço
+ * 
+*/
+
+/**
+ * ========= PROCEDIMENTOS =========
+ * ▸ Rotinas
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ * 
+ */
+
+/**
+ * ========= FUNÇÕES =========
+ * ▸ Funções
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ * 
+ */
+
+/**
+ * ========= VETORES =========
+ * ▸ Arrays
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ *   -  → 
+ * 
+ */
+
+/**
+ * ========= MATRIZES =========
+ * ▸ Matrizes
+ *   -  → 
+ *   -  → 
  *   -  → 
  *   -  → 
  *   -  → 

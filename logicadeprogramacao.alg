@@ -436,3 +436,136 @@ inicio
     soma(x ,y)                                
 fimalgoritmo
 
+algoritmo "somaparametrosreferencia"
+var
+    x, y: inteiro
+procedimento soma(var a, b: inteiro)
+inicio
+    a <- a + 1
+    b <- b + 2
+    escreval("Valor de A = ", a)
+    escreval("Valor de B = ", b)
+    escreval("Soma A + B = ", a+b)
+fimprocedimento
+inicio
+    x <- 4
+    y <- 8
+    soma(x, y)
+    escreval("Valor de X =  ", x)
+    escreval("Valor de Y = ", y)
+fimalgoritmo
+
+algoritmo "fibonacci"
+var
+    c, t1, t2, t3: inteiro
+inicio
+    t1 <- 0
+    escreva(t1)
+    t2 <- 1
+    escreva(t2)
+    para c := 1 ate 13 faca
+        t3 := t1 + t2
+        escreva(t3)
+        t1 := t2
+        t2 := t3
+    fimpara
+fimalgoritmo
+
+algoritmo "fibonacci"
+var
+    c, t1, t2, t3: inteiro
+procedimento proximofibonacci(var a, b: inteiro)
+var c: inteiro
+inicio
+    c := a + b
+    escreva(c)
+    a := b
+    b := c
+fimprocedimento
+inicio
+    t1 <- 0
+    escreva(t1)
+    t2 <- 1
+    escreva(t2)
+    para c := 3 ate 10 faca
+        proximofibonacci(t1, t2)
+    fimpara
+fimalgoritmo
+
+algoritmo "somafuncao"
+var
+    v1, v2, s: inteiro
+    funcao soma(x, y: inteiro): inteiro
+    inicio
+        retorne x + y
+    fimfuncao
+inicio
+    escreva("Digite o primeiro valor: ")
+    leia(v1)
+    escreva("Digite o segundo valor: ")
+    leia(v2)
+    s <- soma(v1, v2)
+    escreva("A soma entre ", v1, " e ", v2, " e igual a ", s)
+fimalgoritmo
+
+algoritmo "funcaoparouimpar"
+var
+    n: inteiro
+    r: caractere
+funcao parouimpar(v:inteiro): caractere
+inicio
+    se (v%2 = 0) entao
+        retorne "PAR"
+    senao
+        retorne "Impar"
+    fimse
+fimfuncao
+inicio
+    escreva("Digite um numero: ")
+    leia(n)
+    r <- parouimpar(n)
+    escreva("O numero ", n, " e um valor ", r)
+fimalgoritmo
+
+algoritmo "funcaofatorail"
+var
+    n, f: inteiro
+funcao fatorial(v: inteiro): inteiro
+var
+    c, r: inteiro
+inicio
+    r <- 1
+    para c <- 1 ate V faca
+            r <- r * c
+    fimpara
+    retorne r
+fimfuncao
+inicio
+    escreva("Digite um numero: ")
+    leia(n)
+    f <- fatorial(n)
+    escreval("o valor de ", n, "! e igual a ", f)
+fimalgoritmo
+
+algoritmo "fibonaccifuncao"
+var
+    i, t1, t2, t3: inteiro
+funcao proximofibonacci(var n1, n2: inteiro):inteiro
+var n3: inteiro
+inicio
+    n3 := n1 + n2
+    n1 := n2
+    n2 := n3
+    retorne n3
+fimfuncao
+inicio
+    t1 <- 0
+    escreval(t1)
+    t2 <- 1
+    escreval(t2)
+    para i <- 3 ate 10 faca
+        t3 <- proximofibonacci(t1, t2)
+        escreval(t3)
+    fimpara
+fimalgoritmo
+

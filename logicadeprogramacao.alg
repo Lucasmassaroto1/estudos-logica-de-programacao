@@ -569,3 +569,22 @@ inicio
     fimpara
 fimalgoritmo
 
+algoritmo "analisadorstring"
+var
+    n: caractere
+    c: inteiro
+inicio
+    escreva("digite seu nome: ")
+    leia(n)
+    escreval("total de letras no seu nome: ", compr(n))
+    escreval("Seu nome em maiusculas e ", maiusc(n))
+    escreval("Seu nome em minusculas e ", minusc(n))
+    escreval("A primeira letra do seu nome e ", copia(n, 1, 1))
+    escreval("A ultima letra do seu nome é ", copia(maiusc(n), compr(n), 1))
+    escreval("Tem a letra C na posicao ", pos("c", n))
+    escreval("O codigo da letra C e ", asc("c"))
+    escreval("A letra de codigo 99 e ", carac(99))
+    para c <- compr(n)ate 1 passo -1 faca
+        escreva(copia(maiusc(n), c, 1))
+    fimpara
+fimalgoritmo

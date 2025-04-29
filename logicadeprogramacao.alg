@@ -588,3 +588,186 @@ inicio
         escreva(copia(maiusc(n), c, 1))
     fimpara
 fimalgoritmo
+
+algoritmo "vetor"
+var
+    v: vetor[1..6] de inteiro
+    c: inteiro
+inicio
+    para c <- 1 ate 6 faca
+        escreva("digite o ", c, "0. valor: ")
+        leia(v[c])
+    fimpara
+    para c <- 1 ate 6 faca
+        escreva("{", v[c], "}")
+    fimpara
+fimalgoritmo
+
+algoritmo "vetorpares"
+var
+    val: vetor[1..7] de inteiro
+    i,totpar: inteiro
+inicio
+    totpar <- 0
+    para i <- 1 ate 7 faca
+        escreva("digite o ", 1, "0. valor: ")
+        leia(val[i])
+        se (val[i]%2 = 0) entao
+            totpar <- totpar + 1
+        fimse
+    fimpara
+    escreval("O valor de pares foi ", totpar)
+    para i <- 1 ate 7 faca
+        se (val[i] % 2 = 0) entao
+            escreval("valor PAR na posicao ", i)
+        fimse
+    fimpara
+fimalgoritmo
+
+algoritmo "vetorpares"
+var
+    val: vetor[1..7] de inteiro
+    i,totpar: inteiro
+inicio
+    totpar <- 0
+    para i <- 1 ate 7 faca
+        escreva("digite o ", 1, "0. valor: ")
+        leia(val[i])
+    fimpara
+    para i <- 1 ate 7 faca
+        se (val[i] % 2 = 0) entao
+            totpar <- totpar + 1
+            escreval("valor PAR na posicao ", i)
+        fimse
+    fimpara
+    escreval("O valor de pares foi ", totpar)
+fimalgoritmo
+
+algoritmo "vetorturma"
+var
+    nome: vetor[1..4] de caractere
+    n1: vetor[1..4] de real
+    n2: vetor[1..4] de real
+    m: vetor[1..4] de real
+    i: inteiro
+inicio
+    para i <- 1 ate 4 faca
+        escrevaL("Aluno ", i)
+        Escreva("Nome: ")
+        leia(nome[i])
+        escreva("Primeira nota: ")
+        leia(n1[i])
+        escreva("Segunda nota: ")
+        leia(n2[i])
+        m[i] <- (n1[i]+n2[i])/2
+    fimpara
+    limpatela
+    escreval("LISTAGEM DE ALUNOS")
+    escreval("------------------")
+    para i <- 1 ate 4 faca
+        escreval(nome[i]:15, m[i]:4:1)
+    fimpara
+fimalgoritmo
+
+algoritmo "vetorturma"
+var
+    nome: vetor[1..4] de caractere
+    n1: vetor[1..4] de real
+    n2: vetor[1..4] de real
+    m: vetor[1..4] de real
+    i, tot: inteiro
+    sm, mt: real
+inicio
+    para i <- 1 ate 4 faca
+        escrevaL("Aluno ", i)
+        Escreva("Nome: ")
+        leia(nome[i])
+        escreva("Primeira nota: ")
+        leia(n1[i])
+        escreva("Segunda nota: ")
+        leia(n2[i])
+        m[i] <- (n1[i]+n2[i])/2
+        sm <- sm + m[i]
+    fimpara
+    mt <- sm/4
+    limpatela
+    escreval("LISTAGEM DE ALUNOS")
+    escreval("------------------")
+    para i <- 1 ate 4 faca
+        escreval(nome[i]:15, m[i]:4:1)
+        se (m[i] > mt) entao
+            tot <- tot + 1
+        fimse
+    fimpara
+    escreval("Ao todo temos ", tot, " alunos acima da media da turma que e ", mt:4:1)
+fimalgoritmo
+
+algoritmo "socomc"
+var
+    nome: caractere
+    soc: vetor[1..10] de caractere
+    c, tot: inteiro
+inicio
+    tot <- 0
+    para c <- 1 ate 10 faca
+        escreva("Digite seu nome nome: ")
+        leia(nome)
+        se (copia(maiusc(nome), 1, 1) = "c") entao
+            tot <- tot + 1
+            soc[tot] <- nome
+        fimse
+    fimpara
+    limpatela
+    escreval("LISTAGEM FINAL")
+    para c <- 1 ate tot faca
+        escreval(soc[c])
+    fimpara
+fimalgoritmo
+
+algoritmo "ordenavetor"
+var
+    vet: vetor[1..4] de inteiro
+    i, j, aux: inteiro
+inicio
+    para i <- 1 ate 4 faca
+        escreva("Digite um valor: ")
+        leia(vet[i])
+    fimpara
+    para i <- 1 ate 3 faca
+        para j <- i+1 ate 4 faca
+            se (vet[i] > vet[j]) entao
+                aux <- vet[i]
+                vet[i] <- vet[j]
+                vet[j] <- aux
+            fimse
+        fimpara
+    fimpara
+    para i <- 1 ate 4 faca
+        escreva("{", vet[i] ,"}")
+    fimpara
+fimalgoritmo
+
+algoritmo "ordenavetor"
+var
+    vet: vetor[1..10] de inteiro
+    i, j, aux: inteiro
+inicio
+    para i <- 1 ate 10 faca
+        escreva("Digite um valor: ")
+        leia(vet[i])
+    fimpara
+
+    para i <- 1 ate 9 faca
+        para j <- i+1 ate 10 faca
+            se (vet[i] > vet[j]) entao
+                aux <- vet[i]
+                vet[i] <- vet[j]
+                vet[j] <- aux
+            fimse
+        fimpara
+    fimpara
+    para i <- 1 ate 10 faca
+        escreva("{", vet[i] ,"}")
+    fimpara
+fimalgoritmo
+

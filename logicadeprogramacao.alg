@@ -771,3 +771,109 @@ inicio
     fimpara
 fimalgoritmo
 
+Algoritmo "matriz"
+Var
+    m: vetor[1..3, 1..2] de inteiro
+    l, c: inteiro
+Inicio
+    para l <- 1 ate 3 faca
+        para c <- 1 ate 2 faca
+            escreva("Digite um valor da posicao [", l, ",", c, "]: ")
+            leia(m[l, c])
+        fimpara
+    fimpara
+    para l <- 1 ate 3 faca
+        para c <- 1 ate 2 faca
+            escreva(m[l, c]:5)
+        fimpara
+        escreval()
+    fimpara
+Fimalgoritmo
+
+Algoritmo "matrizpares"
+Var
+    val: vetor[1..3, 1..3] de inteiro
+    l, c, totpar: inteiro
+Inicio
+    para l <- 1 ate 3 faca
+        para c <- 1 ate 3 faca
+            escreva("Digite um valor da posicao [", l, ",", c, "]: ")
+            leia(val[l, c])
+        fimpara
+    fimpara
+    escreval()
+    escreval("========")
+    escreval("MATRIZ: ")
+    escreval("========")
+    totpar <- 0
+    para l <- 1 ate 3 faca
+        para c <- 1 ate 3 faca
+            se (val[l, c] % 2 = 0) então
+                escreva("{", val[l, c]:2, "}")
+                totpar <- totpar + 1
+            senao
+                escreva(val[l, c]:4)
+            fimse
+        fimpara
+        escreval()
+    fimpara
+    escreval("Ao todo foram digitados", totpar, " Valores PARES")
+Fimalgoritmo
+
+Algoritmo "matrizindentidade"
+Var
+    mid: vetor[1..3, 1..3] de inteiro
+    i, j: inteiro
+Inicio
+    para i <- 1 ate 3 faca
+        para j <- 1 ate 3 faca
+            se (i = j) entao
+                mid[i, j] <- 1
+            senao
+                mid[i, j] <- 0
+            fimse
+        fimpara
+    fimpara
+    para i <- 1 ate 3 faca
+        para j <- 1 ate 3 faca
+            escreva(mid[i, j]: 3)
+        fimpara
+        escreval()
+    fimpara
+Fimalgoritmo
+
+Algoritmo "valoresmatriz"
+Var
+    m: vetor[1..4, 1..4] de inteiro
+    l, c, sdp, p2l, mai3c: inteiro
+Inicio
+    sdp <- 0
+    p2l <- 1
+    para l <- 1 ate 4 faca
+        para c <- 1 ate 4 faca
+            escreva("Digite um valor da posicao [", l, ",", c, "]: ")
+            leia(m[l, c])
+            se (l = c) entao
+                sdp <- sdp + m[l, c]
+            fimse
+        fimpara
+    fimpara
+    para l <- 1 ate 4 faca
+            para c <- 1 ate 4 faca
+                escreva(m[l, c]: 4)
+            fimpara
+            escreval()
+        fimpara
+        para c <- 1 ate 4 faca
+            p2l <- p2l * m[2, c]
+        fimpara
+        para l <- 1 ate 4 faca
+        se (m[l,3] > mai3c) entao
+            mai3c <- m[l,3]
+        fimse
+        fimpara
+        escreval("A soma dos valores da diagonal principal e ",sdp)
+        escreval("O produto dos valores da segunda linha e ",p2l)
+        escreval("O maior valor da terceira coluna e", mai3c)
+Fimalgoritmo
+
